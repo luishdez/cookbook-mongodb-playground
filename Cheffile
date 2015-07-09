@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site "https://supermarket.getchef.com/api/v1"
+
+cookbook "git", "2.10.0"
+cookbook "mongodb",
+  :git => "https://github.com/chef-brigade/mongodb-cookbook.git",
+  :ref => "master"

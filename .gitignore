@@ -1,0 +1,12 @@
+.vagrant
+tmp
+build
+cookbooks
+.idea
+.chef/*.pem
+.generatorrc
+npm-debug.log
+node_modules
+temp
+dump
+npm-debug.log

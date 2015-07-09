@@ -1,0 +1,32 @@
+{
+  "name": "mongodb",
+  "json_class": "Chef::Role",
+  "description": "MongoDB instance",
+  "chef_type": "role",
+  "run_list": [
+    "mongodb::default",
+    "mongodb::user_management"
+  ],
+  "default_attributes": {
+    "mongodb": {
+      "install_method": "10gen",
+      "config": {
+        "auth": true
+      },
+      "admin": {
+        "username": "admin",
+        "password": "mypassword",
+        "roles": ["root", "userAdminAnyDatabase", "dbAdminAnyDatabase"],
+        "database": "admin"
+      },
+      "users": [
+        {
+        "username": "username",
+        "password": "mypassword",
+        "roles": ["dbOwner"],
+        "database": "mydatabase"
+        }
+      ]
+     }
+   }
+}
