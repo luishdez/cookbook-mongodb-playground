@@ -1,7 +1,7 @@
 
-# Vagrant CentOS Boilerplate
+# cookbook-mongodb playground
 
-A basic vagrant project boiler plate
+This is a test project for mongodb chef cookbook
 
 ## Usage
 
