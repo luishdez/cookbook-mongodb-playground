@@ -3,9 +3,12 @@
 
 Vagrant.configure("2") do |config|
 
-  # Box definition
-  config.vm.box = "CentOS-6.6-x86_64-v20150426"
-  config.vm.box_url = "https://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.6-x86_64-v20150426.box"
+  # Box for Ubuntu
+  config.vm.box = "ubuntu/trusty64"
+
+  # Box for Centos
+  # config.vm.box = "CentOS-6.6-x86_64-v20150426"
+  # config.vm.box_url = "https://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.6-x86_64-v20150426.box"
 
   # Customs for virtualBox
   config.vm.provider "virtualbox" do |v|
