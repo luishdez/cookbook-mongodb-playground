@@ -3,7 +3,12 @@
 
 site "https://supermarket.getchef.com/api/v1"
 
-cookbook "git", "2.10.0"
+cookbook 'apt', '~> 2.8.2'
+cookbook 'git', '~> 4.3.3'
+cookbook 'locale', '~> 1.0.2'
+cookbook 'build-essential', '~> 2.2.3'
+cookbook 'sudo', '~> 2.7.2'
+cookbook 'users', '~> 1.8.2'
 cookbook "mongodb",
   :git => "https://github.com/chef-brigade/mongodb-cookbook.git",
   :ref => "master"

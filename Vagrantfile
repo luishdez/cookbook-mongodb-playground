@@ -33,6 +33,6 @@ Vagrant.configure("2") do |config|
     chef.environments_path = "environments"
     chef.roles_path        = "roles"
     chef.environment       = "dev"
-    chef.add_role          "mongodb"
+    chef.add_role          "database"
   end
 end
