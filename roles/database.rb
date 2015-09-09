@@ -23,6 +23,12 @@ override_attributes(
 )
 
 all_env = [
+  "recipe[apt]",
+  "recipe[git]",
+  "recipe[locale]",
+  "recipe[build-essential]",
+  "recipe[sudo]",
+  "recipe[users]",
   "recipe[mongodb]",
   "recipe[mongodb::user_management]"
 ]
